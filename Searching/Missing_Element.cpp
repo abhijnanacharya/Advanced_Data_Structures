@@ -36,7 +36,7 @@ class Solution{
         //}
         //The above is the most naive solution; Take two pointers and since both are
         //sorted the different element will point to the extra element
-        //The below is the most effecient solution as TC=O(log N) 
+        //The below is the most efficient solution as TC=O(log N) 
         //Since the array is sorted you can use BS to extract the mid and check if
         //it is the same; If found same that means the missing element HAS to be after
         //mid index hence discarding the previous section Therefore low=mid+1
