@@ -149,16 +149,18 @@ Node *RemoveHalfNodes(Node *root)
 {
    //add code here.
    if(!root) return root;
-   //LEAF
+
+   //PROCESS LEAF
    if(!root->left && !root->right)
         return root;
-    //Right Missing
+    //In case: Right Missing, process left
     if(!root->right){
         Node* newNode=root->left;
         free(root);// Avoiding Memory Leak
         return RemoveHalfNodes(newNode);
     }
-    //Left Missing 
+
+    //In case: Left Missing, process Right 
     if(!root->left){
         Node* newNode=root->right;
         free(root);// Avoiding Memory Leak
