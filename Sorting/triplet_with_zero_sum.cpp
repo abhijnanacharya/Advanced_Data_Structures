@@ -50,7 +50,7 @@ class Solution{
             while(l<r){
                 if(arr[i]== -(arr[l]+arr[r]))
                     return true;
-                else if(arr[i]>-(arr[l]+arr[r]))
+                else if(arr[i]> -(arr[l]+arr[r]))
                     r--;
                 else
                     l++;

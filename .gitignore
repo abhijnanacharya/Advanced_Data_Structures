@@ -1,0 +1,16 @@
+.cph/
+*.bin
+*.plist
+*/*.dSYM
+*/output/
+*/.cph/
+*/*.txt
+*/*.bin
+.DS_Store
+*/*.exe
+*.exe
+*.sh
+*.bin
+*.elf
+.vscode
+!*.cpp
