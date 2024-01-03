@@ -62,7 +62,8 @@ class Solution{
 // { Driver Code Starts.
 
 int main()
-{
+{   
+    freopen("output.txt","w",stdout);
     // your code goes here
     int T;
     cin >> T;
